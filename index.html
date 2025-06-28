@@ -1,103 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Artemisa Streamer Agency</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-
     body {
-      background: url('./assets/fondo-loop.gif') no-repeat center center fixed;
-      background-size: cover;
+      min-height: 100vh;
       color: #fff;
       text-align: center;
-      padding: 2rem;
-    }
-
-    .logo {
-      width: 120px;
-      margin: 0 auto 1.5rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      text-shadow: 0 0 10px #b300ff;
-    }
-
-    .button-container {
+      background: url('./assets/smoke.gif.gif') center/cover fixed no-repeat;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-bottom: 2rem;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px;
     }
-
-    .btn {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid #fff;
-      padding: 0.75rem 1.25rem;
-      border-radius: 8px;
+    .logo {
+      width: 150px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 10px #ff00ff;
+    }
+    .app-block {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 1.5rem;
+    }
+    .glass-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 8px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 10px;
       color: #fff;
       text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      box-shadow: 0 0 10px #b300ff;
+      font-weight: 600;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 8px rgba(255,0,255,0.6);
+      transition: transform 0.2s, opacity 0.2s;
     }
-
-    .btn:hover {
-      background: #b300ff;
-      color: #fff;
-      transform: scale(1.05);
-      box-shadow: 0 0 15px #ff00d4;
+    .glass-btn:active {
+      transform: scale(0.96);
+      opacity: 0.85;
     }
-
+    .highlight {
+      font-size: 1.2rem;
+      box-shadow: 0 0 15px rgba(255,0,255,0.9);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 15px rgba(255,0,255,0.9); }
+      50% { box-shadow: 0 0 25px rgba(255,0,255,0.5); }
+      100% { box-shadow: 0 0 15px rgba(255,0,255,0.9); }
+    }
     .videos {
+      width: 100%;
+      max-width: 500px;
       margin-top: 2rem;
     }
-
-    .footer {
-      margin-top: 3rem;
+    iframe {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      margin-top: 2rem;
       font-size: 0.9rem;
-      opacity: 0.7;
+      text-shadow: 0 0 8px #ff00ff;
     }
   </style>
 </head>
 <body>
-  <img src="./assets/logo-artemisa.png" alt="Logo Artemisa" class="logo" />
+  <img src="./assets/logo-artemisa.png.png" alt="Artemisa Streamer Agency" class="logo">
+  <h1>conoce las mejores apps y mentorias</h1>
 
-  <h1>Transforma tu tiempo en poder.</h1>
-
-  <div class="button-container">
-    <a href="#" class="btn">LAYLA APP</a>
-    <a href="#" class="btn">LAYLA REGISTRO</a>
-    <a href="#" class="btn">SALSA APP</a>
-    <a href="#" class="btn">SALSA REGISTRO</a>
-    <a href="#" class="btn">TIGO APP</a>
-    <a href="#" class="btn">TIGO REGISTRO</a>
-    <a href="#" class="btn">SELA APP</a>
-    <a href="#" class="btn">SELA REGISTRO</a>
-    <a href="#" class="btn">MACKO APP</a>
-    <a href="#" class="btn">MACKO REGISTRO</a>
-    <a href="#" class="btn">VIDZO APP</a>
-    <a href="#" class="btn">VIDZO REGISTRO</a>
+  <div class="app-block">
+    <a href="https://t.me/+BRiV7SCl67swMjVh" class="glass-btn highlight">LAYLA APP</a>
+    <a href="verification.html" class="glass-btn">LAYLA REGISTRO</a>
+  </div>
+  <div class="app-block">
+    <a href="https://t.me/+l8BWGPxkfwsyYTY5" class="glass-btn">SALSA APP</a>
+    <a href="verification.html" class="glass-btn">SALSA REGISTRO</a>
+  </div>
+  <div class="app-block">
+    <a href="https://t.me/+o4X-JKauguQyMDQx" class="glass-btn">TIGO APP</a>
+    <a href="verification.html" class="glass-btn">TIGO REGISTRO</a>
+  </div>
+  <div class="app-block">
+    <a href="https://t.me/+PRXwg4Hp-ck2MGEx" class="glass-btn">SELA APP</a>
+    <a href="verification.html" class="glass-btn">SELA REGISTRO</a>
+  </div>
+  <div class="app-block">
+    <a href="https://t.me/+KEi9FQmZ3yM0MTBh" class="glass-btn">MACKO APP</a>
+    <a href="verification.html" class="glass-btn">MACKO REGISTRO</a>
+  </div>
+  <div class="app-block">
+    <a href="https://t.me/+PYE9uhACLxVmNDYx" class="glass-btn">VIDZO APP</a>
+    <a href="verification.html" class="glass-btn">VIDZO REGISTRO</a>
   </div>
 
   <div class="videos">
-    <h2>Videos recomendados de TikTok</h2>
-    <p>Aquí puedes incrustar los iframes de tus TikToks favoritos.</p>
-    <p>[Video 1]</p>
-    <p>[Video 2]</p>
+    <iframe src="" allowfullscreen></iframe>
+    <iframe src="" allowfullscreen></iframe>
   </div>
 
-  <div class="footer">
+  <footer>
     Gracias por entrar al portal Artemisa. Este es solo el comienzo.
-  </div>
+  </footer>
 </body>
 </html>

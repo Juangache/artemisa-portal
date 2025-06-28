@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artemisa Streamer Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .btn {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: 12px;
+      border-radius: 12px;
+      margin: 6px 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+    .btn-primary {
+      border: 2px solid #e879f9;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 5px #d946ef; }
+      50% { box-shadow: 0 0 20px #d946ef; }
+      100% { box-shadow: 0 0 5px #d946ef; }
+    }
+  </style>
+</head>
+<body class="text-white text-center p-6" style="background-color: #1a001f;">
+
+  <video id="bg-video" autoplay muted loop>
+    <source src="assets/smoke.mp4" type="video/mp4">
+  </video>
+
+  <img src="assets/logo-artemisa.png" alt="Logo Artemisa" style="width: 140px; margin: 20px auto;" />
+
+  <h1 class="text-2xl font-bold mb-6">Transforma tu tiempo en poder.</h1>
+
+  <!-- Bloques de botones -->
+  <div class="max-w-md mx-auto">
+    <a class="btn" href="https://t.me/+BRiV7SCl67swMjVh">LAYLA APP</a>
+    <a class="btn btn-primary" href="verification.html">LAYLA REGISTRO</a>
+
+    <a class="btn" href="https://t.me/+l8BWGPxkfwsyYTY5">SALSA APP</a>
+    <a class="btn" href="verification.html">SALSA REGISTRO</a>
+
+    <a class="btn" href="https://t.me/+o4X-JKauguQyMDQx">TIGO APP</a>
+    <a class="btn" href="verification.html">TIGO REGISTRO</a>
+
+    <a class="btn" href="https://t.me/+PRXwg4Hp-ck2MGEx">SELA APP</a>
+    <a class="btn" href="verification.html">SELA REGISTRO</a>
+
+    <a class="btn" href="https://t.me/+KEi9FQmZ3yM0MTBh">MACKO APP</a>
+    <a class="btn" href="verification.html">MACKO REGISTRO</a>
+
+    <a class="btn" href="https://t.me/+PYE9uhACLxVmNDYx">VIDZO APP</a>
+    <a class="btn" href="verification.html">VIDZO REGISTRO</a>
+  </div>
+
+  <div class="mt-8">
+    <h2 class="text-xl font-semibold mb-2">Videos recomendados de TikTok</h2>
+    <p class="text-sm italic opacity-75">Aquí puedes incrustar los iframes de tus TikToks favoritos.</p>
+    <!-- Reemplaza esto por el iframe de TikTok si quieres -->
+    <div style="margin-top: 10px;">[Video 1]</div>
+    <div style="margin-top: 10px;">[Video 2]</div>
+  </div>
+
+  <footer class="mt-10 text-sm opacity-80">
+    Gracias por entrar al portal Artemisa. Este es solo el comienzo.
+  </footer>
+</body>
+</html>
